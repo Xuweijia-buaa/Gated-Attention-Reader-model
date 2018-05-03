@@ -5,8 +5,9 @@ This is a pytorch implement of Gated-attention Reader Model([Gated-Attention Rea
 
 Prerequisites
 ========================
-*Python 3.6
-*Pytorch 0.1.12_2
+
+* Python 3.6
+* Pytorch 0.1.12_2
 
 Data
 =================
@@ -17,5 +18,5 @@ create data file, put pretrained word embedding file and data in it.
 
 Training
 =================
-train dailymail data from raw:
+train dailymail data from raw:    
 python main.py ----data_dir 'path to your data file' --dataset dailymail  --embed_dir word2vec_glove.txt
