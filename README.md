@@ -11,9 +11,9 @@ Prerequisites
 
 Data
 =================
-You can find pretained Glove word embeddings and data though this [link](https://drive.google.com/drive/folders/0B7aCzQIaRTDUZS1EWlRKMmt3OXM).  
+You can find data and pretained word embeddings file though this [link](https://drive.google.com/drive/folders/0B7aCzQIaRTDUZS1EWlRKMmt3OXM).  
 
-create data file, put pretrained word embedding file and data in it.
+You need to create your own data file, put data and pretrained word embedding file in it.
 
 
 Training
