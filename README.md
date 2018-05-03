@@ -1,6 +1,8 @@
 Gated Attention Reader Model
 ========================
+
 This is a pytorch implement of Gated-attention Reader Model([Gated-Attention Readers for Text](https://arxiv.org/abs/1606.01549))
+
 Prerequisites
 ========================
 *Python 3.6
