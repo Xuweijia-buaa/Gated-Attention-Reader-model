@@ -19,4 +19,4 @@ You need to create your own data file, put data and pretrained word embedding fi
 Training
 =================
 train dailymail data from raw:    
-python main.py ----data_dir 'path to your data file' --dataset dailymail  --embed_dir word2vec_glove.txt
+python main.py --data_dir 'path to your data file'  --dataset dailymail   --embed_dir word2vec_glove.txt
