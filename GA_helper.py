@@ -88,35 +88,3 @@ def evaluate(model, data, use_cuda):
         n_examples += bsize
     # finish all ex in valid
     return loss/n_examples,acc/n_examples
-
-
-#def evaluate(model, data, use_cuda):
-#    acc = loss = n_examples = 0
-#    tr = trange(
-#        len(data),
-#        desc="loss: {:.3f}, acc: {:.3f}".format(0.0, 0.0),
-#        leave=False)
-#    for dw, dw_m,qw,qw_m,dt,qt,tt,tm, \
-#        answear, candidate, candi_m, cloze_pos, fnames in data:
-##    for dw, dt, qw, qt, a, m_dw, m_qw, tt, \
-##            tm, c, m_c, cl, fnames in data:
-#        bsize = dw.shape[0]
-#        n_examples += bsize
-#        f=feat_fuc(dw,qw)
-#        dw, dw_m,qw,qw_m,dt,qt,tt,tm, answear, candidate, candi_m, cloze_pos,f=to_vars(\
-#        [dw, dw_m,qw,qw_m,dt,qt,tt,tm, answear, candidate, candi_m, cloze_pos,f], use_cuda=use_cuda,evaluate=True)
-#        
-##        loss_, acc_ = model(dw, dt, qw, qt, answear, dw_m, qw_m, tt,
-##                                tm, candidate, candi_m, cloze_pos, fnames,f)
-#        loss_, acc_ = model(dw, dw_m,qw,qw_m,dt,qt,tt,tm, answear, candidate, candi_m, cloze_pos,f)
-#        
-#        
-#        _loss = loss_.cpu().data.numpy()[0]
-#        _acc = acc_.cpu().data.numpy()[0]
-#        loss += _loss
-#        acc += _acc
-#        tr.set_description("loss: {:.3f}, acc: {:.3f}".
-#                           format(_loss, _acc / bsize))
-#        tr.update()
-#    tr.close()
-#    return loss / len(data), acc / n_examples
